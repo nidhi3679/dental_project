@@ -1,0 +1,129 @@
+<html>
+<head>
+    <title>Periodontal Findings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            text-align: center;
+            color: #003366;
+        }
+        .tab {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+            color: #003366;
+        }
+        .form-group {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 0 0 8px 8px;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .buttons .cancel {
+            background-color: white;
+            color: #003366;
+            border: 1px solid #003366;
+        }
+        .buttons .cancel:hover {
+            background-color: #f0f0f0;
+        }
+        .buttons .next, .buttons .back {
+            background-color: #003366;
+            color: white;
+        }
+        .buttons .next:hover, .buttons .back:hover {
+            background-color: #002244;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Periodontal Findings</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Search</a>
+            <a href="#">Register</a>
+            <a href="#" style="color: #00ccff;">Log out</a>
+        </nav>
+    </div>
+    <div class="container">
+        <h2>Register New Patient Details</h2>
+        <div class="tab">Periodontal Findings</div>
+        <div class="form-group">
+            <label for="quad">Pocket</label>
+            <label for="quad">Quad:</label>
+            <select id="quad">
+                <option>Select here</option>
+            </select>
+            <label for="depth">Depth:</label>
+            <select id="depth">
+                <option>Select here</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button class="cancel">Cancel</button>
+            <div>
+                <button class="back">Back</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<html>
+<head>
+    <title>Register New Patient Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .tab {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+            color: #003366;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            flex: 1;
+            margin-right: 10px;
+            align-self: center;
+        }
+        .form-group select, .form-group input {
+            flex: 2;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .form-actions button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-actions .cancel {
+            background-color: white;
+            color: #003366;
+            border: 1px solid #003366;
+        }
+        .form-actions .cancel:hover {
+            background-color: #f0f0f0;
+        }
+        .form-actions .back {
+            background-color: #003366;
+            color: white;
+        }
+        .form-actions .back:hover {
+            background-color: #002244;
+        }
+        .form-actions .submit {
+            background-color: #00b3b3;
+            color: white;
+        }
+        .form-actions .submit:hover {
+            background-color: #009999;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>Soft Tissue Examination</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Search</a>
+            <a href="#">Register</a>
+            <a href="#">Log out</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title">Register New Patient Details</div>
+        <div class="tab">Soft Tissue Examination</div>
+        <div class="form-group">
+            <label for="width-of-attached-gingiva">Width of Attached Gingiva:</label>
+            <select id="width-of-attached-gingiva">
+                <option>Select here</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="frenal-attachment">Frenal attachment:</label>
+            <select id="frenal-attachment">
+                <option>Select here</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="cross-bite">Cross Bite:</label>
+            <select id="cross-bite">
+                <option>Select here</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="depth-of-vestibule">Depth of Vestibule:</label>
+            <input type="text" id="depth-of-vestibule" placeholder="Type here">
+        </div>
+        <div class="form-group">
+            <label for="tension-test">Tension test:</label>
+            <select id="tension-test">
+                <option>Select here</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="frematus-test">Frematus test:</label>
+            <select id="frematus-test">
+                <option>Select here</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="open-contacts">Open Contacts:</label>
+            <select id="open-contacts">
+                <option>Select here</option>
+            </select>
+        </div>
+        <div class="form-actions">
+            <button class="cancel">Cancel</button>
+            <div>
+                <button class="back">Back</button>
+                <button class="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
